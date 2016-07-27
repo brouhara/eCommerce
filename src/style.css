@@ -1,0 +1,18 @@
+#mapImgFooter {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.nav {
+  margin-top: 20px;
+  margin-right: 50px;
+  padding: 20px;
+}
+
+.nav li {
+  padding-top: 10px;
+  color: limegreen;
+}
+li img {
+  margin: 0 20px;
+}
