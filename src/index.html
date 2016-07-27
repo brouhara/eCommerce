@@ -11,51 +11,74 @@
 </head>
 <body>
   <!-- your code here! -->
-  <h1>This is the Home Page</h1>
 
-    <div class="navbar navbar-fixed-bottom" id="bgContent">
-      <div id="footerContent">
-
-        <div class="col-md-3" id="mapImgFooter" >
-          <img src="images/company-location.jpg" width="250px" height="230" alt="Company Map Location"/>
-        </div>
-
-        <div class="col-md-3" >
-          <ul class="links nav nav-pills nav-stacked text-center">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-          </ul>
-        </div>
-        <div class="col-md-3" >
-          <ul class="links nav nav-pills nav-stacked text-center">
-            <li><a href="products.html">Store inventory</a></li>
-            <li><img src="images/placeholder.jpg" width="40px" height="40px" alt="product 2" alt="product 1" />item 1</li>
-            <li><img src="images/placeholder.jpg" width="40px" height="40px" alt="product 2" />item 2</li>
-          </ul>
-        </div>
-        <div class="col-md-3" >
-          <ul class="links nav nav-pills nav-stacked text-center">
-            <li><a href="checkout.html">Check Out</a></li>
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-          </ul>
-        </div>
-
-        <!-- <div class="col-md-3" id="links" >
-          <ul class="nav nav-pills nav-stacked text-center">
-            <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="products.html">Products</a></li>
-            <li><a href="checkout.html">Check Out</a></li>
-          </ul>
-        </div> -->
+  <!-- Email verification -->
 
 
 
-      </div>
+  <form class="container">
+    <h1>This is the Home Page</h1>
+    <br>
+
+    <div class="form-group">
+      <label for="email-verification">Enter Your Email</label>
+      <input type="text" class="form-control" name="email-verification" id="email-verify" value="bob@gmail.com" placeholder="example@ex.com">
     </div>
+    <button type="submit" class="btn-success btn">Submit</button>
+    <div class="row valid-callout">
+        <h2 id="valid-message"></h2>
+      </div>
+  </form>
+
+
+
+
+
+
+  <!-- Footer -->
+  <div class="navbar navbar-fixed-bottom" id="bgContent">
+    <div id="footerContent">
+
+      <div class="col-md-3" id="mapImgFooter" >
+        <img src="images/company-location.jpg" width="250px" height="230" alt="Company Map Location"/>
+      </div>
+
+      <div class="col-md-3" >
+        <ul class="links nav nav-pills nav-stacked text-center">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li>item 1</li>
+          <li>item 2</li>
+          <li>item 3</li>
+        </ul>
+      </div>
+      <div class="col-md-3" >
+        <ul class="links nav nav-pills nav-stacked text-center">
+          <li><a href="products.html">Store inventory</a></li>
+          <li><img src="images/placeholder.jpg" width="40px" height="40px" alt="product 2" alt="product 1" />item 1</li>
+          <li><img src="images/placeholder.jpg" width="40px" height="40px" alt="product 2" />item 2</li>
+        </ul>
+      </div>
+      <div class="col-md-3" >
+        <ul class="links nav nav-pills nav-stacked text-center">
+          <li><a href="checkout.html">Check Out</a></li>
+          <li>item 1</li>
+          <li>item 2</li>
+          <li>item 3</li>
+        </ul>
+      </div>
+
+      <!-- <div class="col-md-3" id="links" >
+        <ul class="nav nav-pills nav-stacked text-center">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="products.html">Products</a></li>
+          <li><a href="checkout.html">Check Out</a></li>
+        </ul>
+      </div> -->
+
+
+
+    </div>
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script type="text/javascript" src="main.js">
