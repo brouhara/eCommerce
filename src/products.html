@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Unit 1 Project - eCommerce Site</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/slate/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
@@ -9,33 +10,59 @@
 
 
 </head>
+
 <body>
-  <!-- your code here! -->
+
+  <!-- Navbar -->
+
+  <nav class="navbar navbar-fixed-top">
+    <a href="index.html"><img class="logo" src="images/generic-logo.png"></a>
+    <!-- <label for="show-menu" class="show-menu">Menu</label>
+    <input type="checkbox" id="show-menu" role="button"> -->
+    <ul id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="products.html">Products</a>
+        <ul>
+          <li><a href="#">Mens</a></li>
+          <li><a href="#">Womens</a></li>
+          <li><a href="#">Kids</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="checkout.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart <span class="badge">3</span></a></li>
+    </ul>
+  </nav>
+
   <h1>This is the Products Page</h1>
 
-    <div class="navbar navbar-fixed-bottom">
-      <div id="footerContent">
+  <!-- Footer -->
 
-        <div class="col-md-3" id="mapImgFooter" >
-          <img src="images/company-location.jpg" width="250px" height="230" alt="Company Map Location"/>
+  <footer class="navbar navbar-fixed-bottom" id="bgContent">
+
+    <div class="row" id="footerContent">
+      <div class="container-fluid">
+        <div class="col-md-3" id="mapImgFooter">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4971.293240780024!2d-162.0809380491032!3d5.888403995713022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwNTMnMTguMiJOIDE2MsKwMDQnNDMuNSJX!5e1!3m2!1sen!2sus!4v1469672058103"
+              width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
 
-        <div class="col-md-3" >
+        <div class="col-md-3">
           <ul class="links nav nav-pills nav-stacked text-center">
-            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
             <li>item 1</li>
             <li>item 2</li>
             <li>item 3</li>
           </ul>
         </div>
-        <div class="col-md-3" >
+        <div class="col-md-3">
           <ul class="links nav nav-pills nav-stacked text-center">
-            <li class="active"><a href="products.html">Store inventory</a></li>
+            <li><a href="products.html">Store inventory</a></li>
             <li><img src="images/placeholder.jpg" width="40px" height="40px" alt="product 2" alt="product 1" />item 1</li>
             <li><img src="images/placeholder.jpg" width="40px" height="40px" alt="product 2" />item 2</li>
           </ul>
         </div>
-        <div class="col-md-3" >
+        <div class="col-md-3">
           <ul class="links nav nav-pills nav-stacked text-center">
             <li><a href="checkout.html">Check Out</a></li>
             <li>item 1</li>
@@ -43,24 +70,22 @@
             <li>item 3</li>
           </ul>
         </div>
-
-        <!-- <div class="col-md-3" id="links" >
-          <ul class="nav nav-pills nav-stacked text-center">
-            <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="products.html">Products</a></li>
-            <li><a href="checkout.html">Check Out</a></li>
-          </ul>
-        </div> -->
-
-
-
       </div>
+      <!-- <div class="col-md-3" id="links" >
+        <ul class="nav nav-pills nav-stacked text-center">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="products.html">Products</a></li>
+          <li><a href="checkout.html">Check Out</a></li>
+        </ul>
+      </div> -->
+
     </div>
+  </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script type="text/javascript" src="main.js">
-
   </script>
 
 </body>
+
 </html>
