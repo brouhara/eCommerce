@@ -1,36 +1,36 @@
-nav {
-  width: 100%;
+/* NAVBAR STYLING */
+
+.navbar-fixed-top {
+  /*width: 100%;*/
   height: 70px;
+  margin: 0;
+  padding: 0;
   background: #7A8288;
 }
-
 .logo {
   max-height: 70px;
   width: auto;
   margin: auto 0 auto 30px;
 }
-
-ul {
-  list-style-type: none;
+#menu, #menu ul {
   margin: 0;
   padding: 0;
   float: right;
 }
 
-/* Make Links Horizontal */
+/* Make Nav Links Horizontal */
 
-li {
+#menu li {
   display: inline-block;
-  float: left;
   margin-right: 1px;
 }
 
 /* Menu Links */
 
-li a {
+#menu li a {
   display: block;
   min-width: 140px;
-  height: 70px;
+  height: 68px;
   text-align: center;
   line-height: 70px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -41,7 +41,7 @@ li a {
 
 /* Hover for Top Level Links */
 
-li:hover a {
+#menu li:hover a {
   background: #62C462;
   color: #fff;
   text-decoration: none;
@@ -49,7 +49,7 @@ li:hover a {
 
 /* Style for Dropdown Links */
 
-li:hover ul a {
+#menu li:hover ul a {
   background: #f3f3f3;
   color: #2f3036;
   height: 40px;
@@ -58,40 +58,39 @@ li:hover ul a {
 
 /* Hover state for dropdown links */
 
-li:hover ul a:hover {
+#menu li:hover ul a:hover {
   background: #7A8288;
   color: #fff;
 }
 
 /* Hide dropdown links until they are needed */
 
-li ul {
+#menu li ul {
   display: none;
 }
 
 /* Display the dropdown on hover */
 
-li:hover > ul {
+#menu li:hover > ul {
   display: block;
 }
 
 /* Make dropdown links vertical */
 
-li ul li{
+#menu li ul li {
   display: block;
   float: none;
 }
 
 /* Prevent text wrapping */
 
-li ul li a {
+#menu li ul li a {
   width: 140px;
   min-width: 100px;
   padding: 0 10px;
 }
-
 .badge {
-  background: #272B30;
+  background: #EE5F5B;
 }
 
 /* Style 'show menu' label button and hide it by default */
@@ -110,65 +109,54 @@ li ul li a {
 
 /* Hide checkbox */
 
-input[type=checkbox] {
+/*input[type=checkbox] {
   display: none;
-}
+}*/
 
 /* Show menu when invisible checkbox is checked */
 
-input[type=checkbox]:checked~ #menu {
+/*input[type=checkbox]:checked~ #menu {
   display: block;
   width: 100%;
-}
+}*/
 
 /* Responsive Styles */
 
-@media screen and (max-width: 760px) {
+/*@media screen and (max-width: 760px) {*/
   /* Make dropdown links appear inline */
-  .logo {
+  /*.logo {
     display: block;
     margin: auto;
   }
-
   ul {
     position: static;
     display: none;
-  }
+  }*/
   /* Create vertical spacing */
-  li {
+  /*li {
     margin-bottom: 1px;
-  }
+  }*/
   /* Make all menu links full width */
-  ul li, li a {
+  /*ul li, li a {
     width: 100%;
-  }
+  }*/
   /* Display 'show menu' link */
-  .show-menu {
+  /*.show-menu {
     display: block;
   }
-}
+}*/
 
+/* CODE FOR FOOTER */
 
-/*
-  CODE FOR FOOTER
-
-  #mapImgFooter {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.nav {
-  margin-top: 20px;
-  margin-right: 50px;
-  padding: 20px;
+#mapImgFooter {
+  margin: 10px 0;
 }
 
 .nav li {
-  padding-top: 10px;
-  color: limegreen;
+  color: #62C462;
+  margin: 10px 0;
 }
+
 li img {
   margin: 0 20px;
 }
-
-*/
