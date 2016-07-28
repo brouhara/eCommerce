@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Unit 1 Project - eCommerce Site</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/slate/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Unit 1 Project - eCommerce Site</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/slate/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="./css/carousel.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 </head>
+
 <body>
-  <!-- your code here! -->
-  <form class="container">
-    <h1>Hello</h1>
-    <p>
-      To everyone here
-    </p>
-  </form>
+    <!-- your code here! -->
+    <div id="jumbotron">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script type="text/javascript" src="main.js">
+        <div class="prev">
+            <button type="button " class="btn btn-default " aria-label="Left Align " id="prev "><span class="glyphicon glyphicon-chevron-left " aria-hidden="true "></span></button>
+        </div>
 
-  </script>
+        <div class="slider">
+            <div><div id="one" /></div></div>
+            <div><div id="two" /></div></div>
+            <div><div id="three" /></div></div>
+        </div>
+
+        <div class="next ">
+            <button type="button " class="btn btn-default " aria-label="Right Align " id="next "><span class="glyphicon glyphicon-chevron-right " aria-hidden="true "></span></button>
+        </div>
+
+    </div>
+
+    <nav aria-label="... ">
+        <ul  id="dots" class="pagination ">
+            <li class="active "><a href="# ">1 <span class="sr-only ">(current)</span></a></li>
+            <li><a href="# ">2 <span class="sr-only ">(current)</span></a></li>
+            <li><a href="# ">3 <span class="sr-only ">(current)</span></a></li>
+            <li><a href="# ">4 <span class="sr-only ">(current)</span></a></li>
+        </ul>
+    </nav>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js "></script>
+    <script type="text/javascript " src="main.js "></script>
+    <script type="text/javascript " src="./js/caroursel.js "></script>
 
 </body>
+
 </html>
