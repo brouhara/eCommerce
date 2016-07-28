@@ -11,6 +11,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/slate/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
   <!-- Personal CSS -->
   <link rel="stylesheet" href="style.css">
+  <link href="./css/carousel.css" rel="stylesheet">
   <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/6e15042094.js"></script>
 </head>
@@ -38,6 +39,39 @@
     </ul>
   </nav>
 
+  <!-- Carousel -->
+<div class="row">
+  <div class="container-fluid">
+    <div id="jumbotron">
+
+      <div class="prev">
+        <button type="button " class="btn btn-default " aria-label="Left Align " id="prev "><span class="glyphicon glyphicon-chevron-left " aria-hidden="true "></span></button>
+      </div>
+
+      <div class="slider">
+        <div><div id="one" /></div></div>
+        <div><div id="two" /></div></div>
+        <div><div id="three" /></div></div>
+      </div>
+
+      <div class="next ">
+        <button type="button " class="btn btn-default " aria-label="Right Align " id="next "><span class="glyphicon glyphicon-chevron-right " aria-hidden="true "></span></button>
+      </div>
+
+      </div>
+
+    <div class="carousel" aria-label="... ">
+      <ul id="dots" class="pagination ">
+        <li class="active "><a href="# ">1 <span class="sr-only ">(current)</span></a></li>
+        <li><a href="# ">2 <span class="sr-only ">(current)</span></a></li>
+        <li><a href="# ">3 <span class="sr-only ">(current)</span></a></li>
+        <li><a href="# ">4 <span class="sr-only ">(current)</span></a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
   <!-- Email verification -->
 
   <form class="container">
@@ -61,7 +95,8 @@
     <div class="row" id="footerContent">
       <div class="container-fluid">
         <div class="col-md-3" id="mapImgFooter">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4971.293240780024!2d-162.0809380491032!3d5.888403995713022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwNTMnMTguMiJOIDE2MsKwMDQnNDMuNSJX!5e1!3m2!1sen!2sus!4v1469672058103" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4971.293240780024!2d-162.0809380491032!3d5.888403995713022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwNTMnMTguMiJOIDE2MsKwMDQnNDMuNSJX!5e1!3m2!1sen!2sus!4v1469672058103"
+            width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
 
         <div class="col-md-3">
@@ -104,8 +139,8 @@
   <!-- Bootstrap JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <!-- Personal JavaScript -->
-  <script type="text/javascript" src="main.js">
-  </script>
+  <script type="text/javascript" src="main.js">  </script>
+  <script type="text/javascript" src="./js/caroursel.js"></script>
 
 </body>
 

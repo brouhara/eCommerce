@@ -5,6 +5,7 @@
     height: 30%;
     width: 100%;
     line-height: 7;
+    margin-top: 80px;
 }
 
 div .prev {
@@ -90,7 +91,9 @@ img#four {
     background-image: url("https://www.dropbox.com/s/xn9cdo1itkvxxzq/WP_000122.jpg?dl=1");
 }
 
-nav {
+div.carousel {
+    margin-top: 80px;
+    position: relative;
     text-align: center;
     background: none;
 }
