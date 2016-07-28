@@ -9,28 +9,35 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!-- Bootstrap CDN -->
 	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/slate/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-	<!-- Personal CSS -->
+
+	<!-- Page Section CSS -->
 	<link rel="stylesheet" href="style.css">
 	<link href="./css/navbar.css" rel="stylesheet">
 	<link href="./css/carousel.css" rel="stylesheet">
+
 	<!-- Font Awesome -->
 	<script src="https://use.fontawesome.com/6e15042094.js"></script>
+
 </head>
 
 <body>
 
-	<!-- Navbar -->
+	<!-- Navbar Container -->
 	<div class="container-fluid" style="height:100px">
+
+		<!-- Navbar Row Col -->
 		<div class="row">
 			<div class="col-md-12">
+
+				<!-- Navbar Element -->	
 				<nav class="navbar navbar-fixed-top">
 					<a href="index.html"><img class="logo" src="images/generic-logo.png"></a>
-					<!-- <label for="show-menu" class="show-menu">Menu</label>
-          <input type="checkbox" id="show-menu" role="button"> -->
+
+					<!-- Navbar Links -->
 					<ul id="menu">
 						<li><a href="index.html">Home</a></li>
-						<li>
-							<a href="products.html">Products</a>
+						<li><a href="products.html">Products</a>
+							<!-- Products Submenu -->
 							<ul>
 								<li><a href="#">Mens</a></li>
 								<li><a href="#">Womens</a></li>
@@ -38,18 +45,26 @@
 							</ul>
 						</li>
 						<li><a href="#">Contact</a></li>
+
+						<!-- Shopping Cart -->
 						<li><a href="checkout.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart <span class="badge">3</span></a></li>
 					</ul>
+					<!-- End Navbar Links -->
 				</nav>
+				<!-- Navbar Element -->
 			</div>
 		</div>
+		<!-- Navbar Row Col -->
 	</div>
+	<!-- End Navar Container -->
 
 	<!-- Carousel -->
 	<div class="container-fluid" style="height:300px">
 
-		<!-- Carousel Image Elements -->
+		<!-- Carousel Container Row -->
 		<div class="row">
+
+			<!-- Carousel Container Column -->
 			<div class="col-md-12">
 
 				<!-- Jumbotron Slider Elements -->
@@ -76,55 +91,84 @@
 				<!-- End Jumbotron Slider Elements -->
 			</div>
 		</div>
+		<!-- End Row Col -->
 
-		<!-- Carousel Navigation Elements -->
+		<!-- Carousel Row Elements -->
 		<div class="row">
+
+			<!-- Carousel Column Elements -->
 			<div class="col-span-12">
 
 				<!-- Carousel Image Navigation Bar -->
 				<div class="carousel" aria-label="... ">
+
+					<!-- Carousel Current Image -->
 					<ul id="dots" class="pagination ">
 						<li class="active "><a href="# ">1 <span class="sr-only ">(current)</span></a></li>
 						<li><a href="# ">2 <span class="sr-only ">(current)</span></a></li>
 						<li><a href="# ">3 <span class="sr-only ">(current)</span></a></li>
 						<li><a href="# ">4 <span class="sr-only ">(current)</span></a></li>
 					</ul>
+					<!-- End Carousel Current Image -->
+
 				</div>
+				<!-- End Carousel Image Navigation Bar -->
 
 			</div>
+			<!-- End Container Column -->
+
 		</div>
+		<!-- End Container Row -->
+
 	</div>
 	<!-- End of Carousel -->
-	
-	<!-- Email verification -->
+
+	<!-- Email Verification -->
 	<div class="container-fluid" height="300px">
+
+		<!-- Container Row -->
 		<div class="row">
+
+			<!-- Container Col -->
 			<div class="col-md-12">
 
+				<!-- Form Container -->
 				<form class="container">
+
+					<!-- Form Content -->
 					<h1>This is the Home Page</h1>
+
+					<!-- Email Form Group -->
 					<div class="form-group">
 						<label for="email-verification">Enter Your Email</label>
 						<input type="text" class="form-control" name="email-verification" id="email-verify" value="bob@gmail.com" placeholder="example@ex.com">
 					</div>
+
+					<!-- Form Submit -->
 					<button type="submit" class="btn-success btn">Submit</button>
-					<div class="row valid-callout">
-						<h2 id="valid-message"></h2>
-					</div>
+
 				</form>
+				<!-- End Form Content -->
 			</div>
+			<!-- End Container Col -->
 		</div>
+		<!-- End Container Row -->
+
 	</div>
+	<!-- End Email Verification -->
 
 	<!-- Footer -->
+	<footer class="footer" id="bgContent">
 
-
-	<footer class="navbar navbar-fixed-bottom" id="bgContent">
-
+		<!-- Footer Container -->
+		<div class="container-fluid">
+		
+		<!-- Container Row -->
 		<div class="row" id="footerContent">
-			<div class="container-fluid">
-				<div class="col-md-3" id="mapImgFooter">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4971.293240780024!2d-162.0809380491032!3d5.888403995713022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwNTMnMTguMiJOIDE2MsKwMDQnNDMuNSJX!5e1!3m2!1sen!2sus!4v1469672058103"
+
+			<!-- Container Col -->
+			<div class="col-md-3" id="mapImgFooter">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4971.293240780024!2d-162.0809380491032!3d5.888403995713022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwNTMnMTguMiJOIDE2MsKwMDQnNDMuNSJX!5e1!3m2!1sen!2sus!4v1469672058103"
 									width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 
