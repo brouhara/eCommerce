@@ -3,92 +3,156 @@
 
 <head>
 
-  <title>eCommerce Site</title>
+	<title>eCommerce Site</title>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <!-- Bootstrap CDN -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/slate/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-  <!-- Personal CSS -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Font Awesome -->
-  <script src="https://use.fontawesome.com/6e15042094.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Bootstrap CDN -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/slate/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	<!-- Personal CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link href="./css/navbar.css" rel="stylesheet">
+	<link href="./css/carousel.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<script src="https://use.fontawesome.com/6e15042094.js"></script>
 </head>
 
 <body>
 
-  <!-- Navbar -->
+	<!-- Navbar -->
+	<div class="container-fluid" style="height:100px">
+		<div class="row">
+			<div class="col-md-12">
+				<nav class="navbar navbar-fixed-top">
+					<a href="index.html"><img class="logo" src="images/generic-logo.png"></a>
+					<!-- <label for="show-menu" class="show-menu">Menu</label>
+          <input type="checkbox" id="show-menu" role="button"> -->
+					<ul id="menu">
+						<li><a href="index.html">Home</a></li>
+						<li>
+							<a href="products.html">Products</a>
+							<ul>
+								<li><a href="#">Mens</a></li>
+								<li><a href="#">Womens</a></li>
+								<li><a href="#">Kids</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="checkout.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart <span class="badge">3</span></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
 
-  <nav class="navbar navbar-fixed-top">
-    <a href="index.html"><img class="logo" src="images/generic-logo.png"></a>
-    <!-- <label for="show-menu" class="show-menu">Menu</label>
-    <input type="checkbox" id="show-menu" role="button"> -->
-    <ul id="menu">
-      <li><a href="index.html">Home</a></li>
-      <li>
-        <a href="products.html">Products</a>
-        <ul>
-          <li><a href="#">Mens</a></li>
-          <li><a href="#">Womens</a></li>
-          <li><a href="#">Kids</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="checkout.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart <span class="badge">3</span></a></li>
-    </ul>
-  </nav>
+	<!-- Carousel -->
+	<div class="container-fluid" style="height:300px">
 
-  <!-- Email verification -->
+		<!-- Carousel Image Elements -->
+		<div class="row">
+			<div class="col-md-12">
 
-  <form class="container">
-    <h1>This is the Home Page</h1>
-    <br>
+				<!-- Jumbotron Slider Elements -->
+				<div id="jumbotron">
 
-    <div class="form-group">
-      <label for="email-verification">Enter Your Email</label>
-      <input type="text" class="form-control" name="email-verification" id="email-verify" value="bob@gmail.com" placeholder="example@ex.com">
-    </div>
-    <button type="submit" class="btn-success btn">Submit</button>
-    <div class="row valid-callout">
-      <h2 id="valid-message"></h2>
-    </div>
-  </form>
+					<!-- Previous Button -->
+					<div class="prev">
+						<button type="button " class="btn btn-default " aria-label="Left Align " id="prev "><span class="glyphicon glyphicon-chevron-left " aria-hidden="true "></span></button>
+					</div>
 
-  <!-- Footer -->
+					<!-- Slider Images -->
+					<div class="slider">
+						<div id="one" /></div>
+						<div id="two" /></div>
+						<div id="three" /></div>
+					</div>
 
-  <footer class="navbar navbar-fixed-bottom" id="bgContent">
+					<!-- Next Button -->
+					<div class="next ">
+						<button type="button " class="btn btn-default " aria-label="Right Align " id="next "><span class="glyphicon glyphicon-chevron-right " aria-hidden="true "></span></button>
+					</div>
+				
+				</div>
+				<!-- End Jumbotron Slider Elements -->
+			</div>
+		</div>
 
-    <div class="row" id="footerContent">
-      <div class="container-fluid">
-        <div class="col-md-3" id="mapImgFooter">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4971.293240780024!2d-162.0809380491032!3d5.888403995713022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwNTMnMTguMiJOIDE2MsKwMDQnNDMuNSJX!5e1!3m2!1sen!2sus!4v1469672058103" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
+		<!-- Carousel Navigation Elements -->
+		<div class="row">
+			<div class="col-span-12">
 
-        <div class="col-md-3">
-          <ul class="links nav nav-pills nav-stacked text-center">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <ul class="links nav nav-pills nav-stacked text-center">
-            <li><a href="products.html">Store inventory</a></li>
-            <li><img src="images/placeholder.jpg" width="40px" height="40px" alt="product 2" alt="product 1" />item 1</li>
-            <li><img src="images/placeholder.jpg" width="40px" height="40px" alt="product 2" />item 2</li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <ul class="links nav nav-pills nav-stacked text-center">
-            <li><a href="checkout.html">Check Out</a></li>
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-          </ul>
-        </div>
-      </div>
-      <!-- <div class="col-md-3" id="links" >
+				<!-- Carousel Image Navigation Bar -->
+				<div class="carousel" aria-label="... ">
+					<ul id="dots" class="pagination ">
+						<li class="active "><a href="# ">1 <span class="sr-only ">(current)</span></a></li>
+						<li><a href="# ">2 <span class="sr-only ">(current)</span></a></li>
+						<li><a href="# ">3 <span class="sr-only ">(current)</span></a></li>
+						<li><a href="# ">4 <span class="sr-only ">(current)</span></a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- End of Carousel -->
+	
+	<!-- Email verification -->
+	<div class="container-fluid" height="300px">
+		<div class="row">
+			<div class="col-md-12">
+
+				<form class="container">
+					<h1>This is the Home Page</h1>
+					<div class="form-group">
+						<label for="email-verification">Enter Your Email</label>
+						<input type="text" class="form-control" name="email-verification" id="email-verify" value="bob@gmail.com" placeholder="example@ex.com">
+					</div>
+					<button type="submit" class="btn-success btn">Submit</button>
+					<div class="row valid-callout">
+						<h2 id="valid-message"></h2>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+
+	<footer class="navbar navbar-fixed-bottom" id="bgContent">
+
+		<div class="row" id="footerContent">
+			<div class="container-fluid">
+				<div class="col-md-3" id="mapImgFooter">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4971.293240780024!2d-162.0809380491032!3d5.888403995713022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwNTMnMTguMiJOIDE2MsKwMDQnNDMuNSJX!5e1!3m2!1sen!2sus!4v1469672058103"
+									width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+
+				<div class="col-md-3">
+					<ul class="links nav nav-pills nav-stacked text-center">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li>item 1</li>
+						<li>item 2</li>
+						<li>item 3</li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="links nav nav-pills nav-stacked text-center">
+						<li><a href="products.html">Store inventory</a></li>
+						<li><img src="images/placeholder.jpg" width="40px" height="40px" alt="product 2" alt="product 1" />item 1</li>
+						<li><img src="images/placeholder.jpg" width="40px" height="40px" alt="product 2" />item 2</li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="links nav nav-pills nav-stacked text-center">
+						<li><a href="checkout.html">Check Out</a></li>
+						<li>item 1</li>
+						<li>item 2</li>
+						<li>item 3</li>
+					</ul>
+				</div>
+			</div>
+			<!-- <div class="col-md-3" id="links" >
         <ul class="nav nav-pills nav-stacked text-center">
           <li><a href="index.html">Home</a></li>
           <li class="active"><a href="products.html">Products</a></li>
@@ -96,16 +160,16 @@
         </ul>
       </div> -->
 
-    </div>
-  </footer>
-
-  <!-- jQuery CDN -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <!-- Bootstrap JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <!-- Personal JavaScript -->
-  <script type="text/javascript" src="main.js">
-  </script>
+		</div>
+	</footer>
+	<!-- jQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<!-- Bootstrap JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Personal JavaScript -->
+	<script type="text/javascript" src="main.js">
+	</script>
+	<script type="text/javascript" src="./js/caroursel.js"></script>
 
 </body>
 

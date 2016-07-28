@@ -1,0 +1,27 @@
+/* NAVBAR STYLING */
+
+.navbar-fixed-top {
+  /*width: 100%;*/
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+.logo {
+  max-height: 70px;
+  width: auto;
+  margin: auto 0 auto 30px;
+}
+
+#menu, #menu ul {
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+/* Make Nav Links Horizontal */
+
+#menu li {
+  display: inline-block;
+  margin-right: 1px;
+}

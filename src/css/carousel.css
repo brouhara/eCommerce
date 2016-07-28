@@ -1,0 +1,101 @@
+
+#jumbotron {
+    display: flex;
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    line-height: 7;
+}
+
+div .prev {
+    display: inline-flex;
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+    
+    align-items: center;
+    background: none;
+}
+
+div .next {
+    display: inline-flex;
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+
+    align-items: center;
+    background: none;
+}
+
+div.slider {
+    display: inline-flex;
+    position: relative;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    background-color: black;
+
+    margin: 0;
+    padding: 0;
+    
+    width:100%;
+    height: 100%;
+    background-size: contain;
+}
+
+div.slider div {
+    width: 100%;
+    height:100%;
+}
+
+div.slider img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+div#one {
+    background-image: url("https://www.dropbox.com/s/xn9cdo1itkvxxzq/WP_000122.jpg?dl=1");
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+}
+
+div#two {
+    display: inline-flex;
+    position: relative;
+
+    height: inherit;
+    width: inherit;
+    background-image: url("https://www.dropbox.com/s/xn9cdo1itkvxxzq/WP_000122.jpg?dl=1");
+
+}
+
+div#three {
+    display: inline-flex;
+    position: relative;
+
+    height: inherit;
+    width: inherit;
+    background-image: url("https://www.dropbox.com/s/xn9cdo1itkvxxzq/WP_000122.jpg?dl=1");
+
+}
+
+img#four {
+    display: inline-flex;
+    position: relative;
+
+    height: inherit;
+    width: inherit;
+    background-image: url("https://www.dropbox.com/s/xn9cdo1itkvxxzq/WP_000122.jpg?dl=1");
+}
+
+div.carousel {
+    position: relative;
+    text-align: center;
+    background: none;
+}
+
+dots {
+    margin:0;
+}

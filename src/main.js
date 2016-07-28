@@ -1,52 +1,79 @@
 // Email Verification Code
 
-$(document).ready(function() {
+$(document).ready(function () {
   console.log('sanity check');
 
-  $('form').on('submit', function(event) {
-    event.preventDefault()
+    $('form').on('submit', function (event) {
+      event.preventDefault()
 
-    email = $('#email-verify').val();
-    console.log(email);
-
-    if (email.indexOf('@') < 0) {
+      email = $('#email-verify').val();
       console.log(email);
-      var message = 'Make sure to include a "@"!'
-      $('.valid-callout > h2').text(message)
-      $('.valid-callout').css('visibility', 'visible')
-      setTimeout(hideCallout, 2000)
-    } else if (email.indexOf('@') <= 0) {
 
-    } else if (email.indexOf('@') + 1 === email.lastIndexOf('.')) {
-      var message = 'Please Input Something before the "." and after the "@"'
-      $('.valid-callout > h2').text(message);
-      $('.valid-callout').css('visibility', 'visible')
-      setTimeout(hideCallout, 2000)
-    }
 
-    function shake() {
-      $('#email-verify').animate({
-        "margin-left": "15px"
-      }, 50)
-      $('#email-verify').animate({
-        "margin-left": "-15px"
-      }, 50)
-      $('#email-verify').animate({
-        "margin-left": "0px"
-      }, 15)
-      $('#email-verify').animate({
-        "border-color": "red"
-      }, 500)
-    }
-    shake()
 
-  })
+
+      var validSubDomain =  email.indexOf('@') + 2 >= email.indexOf('.')
+      var topLevelDomain = email.slice(email.lastIndexOf('.')).length > 1
+      var includeAtSymbol = email.indexOf('@') < 0
+      var validDomain = email.indexOf('@') + 1 === email.lastIndexOf('.')
+      var invalidChars = ['/','-','!','&','#','(',')']
+      var hasInvalidChars = invalidChars.some(function(each) {
+        return email.indexOf(each) !== -1
+      })
+
+      function addClassToEmail (className) {
+        $('#email-verify').removeClass('validEmail errorInput').addClass(className);
+      }
+      // addClassToEmail('errorInput')
+
+          function validateEmail () {
+            if (hasInvalidChars) {
+              // 'Has invalid Characters!'
+              addClassToEmail('errorInput')
+              shake()
+            } else if (!topLevelDomain) {
+              // 'Make sure to include a top level domain!'
+              addClassToEmail('errorInput')
+              shake()
+            }else if (includeAtSymbol) {
+              // 'Make sure to include a "@"!'
+              addClassToEmail('errorInput')
+              shake()
+            }else if (validSubDomain) {
+              // 'Please Input a "." after the @'
+              addClassToEmail('errorInput')
+              shake()
+            }else if (validDomain) {
+              // 'Please Input Something before the "." and after the "@"'
+              addClassToEmail('errorInput')
+              shake()
+            } else {
+              addClassToEmail('validEmail')
+            }
+          }
+          validateEmail()
+
+
+
+      function shake () {
+        $('#email-verify').animate({
+          "margin-left" : "15px"
+        },100)
+        $('#email-verify').animate({
+          "margin-left" : "-15px"
+        },100)
+        $('#email-verify').animate({
+          "margin-left" : "0px"
+        },100)
+      }
+
+    })
 
 })
 
-function hideCallout() {
-  $('.valid-callout').css('visibility', 'hidden')
-}
+function hideCallout () {
+    $('.valid-callout').css('visibility', 'hidden')
+  }
 
 // CHECKOUT VALIDATION
 
@@ -180,6 +207,7 @@ $(document).ready(function() {
       }
 
       // Accept only spaces, digits and dashes
+
       if (/[^0-9 \-]+/.test(value)) {
         return false;
       }
