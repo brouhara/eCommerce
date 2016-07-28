@@ -21,6 +21,21 @@ $(document).ready(function () {
         $('.valid-callout').css('visibility', 'visible')
         setTimeout(hideCallout, 2000)
       }
+      function shake () {
+        $('#email-verify').animate({
+          "margin-left" : "15px"
+        },50)
+        $('#email-verify').animate({
+          "margin-left" : "-15px"
+        },50)
+        $('#email-verify').animate({
+          "margin-left" : "0px"
+        },15)
+        $('#email-verify').animate({
+          "border-color" : "red"
+        },500)
+      }
+      shake()
 
     })
 
