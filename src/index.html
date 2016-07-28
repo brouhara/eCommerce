@@ -11,6 +11,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/slate/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
   <!-- Personal CSS -->
   <link rel="stylesheet" href="style.css">
+  <link href="./css/navbar.css" rel="stylesheet">
   <link href="./css/carousel.css" rel="stylesheet">
   <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/6e15042094.js"></script>
@@ -19,29 +20,33 @@
 <body>
 
   <!-- Navbar -->
-
-  <nav class="navbar navbar-fixed-top">
-    <a href="index.html"><img class="logo" src="images/generic-logo.png"></a>
-    <!-- <label for="show-menu" class="show-menu">Menu</label>
-    <input type="checkbox" id="show-menu" role="button"> -->
-    <ul id="menu">
-      <li><a href="index.html">Home</a></li>
-      <li>
-        <a href="products.html">Products</a>
-        <ul>
-          <li><a href="#">Mens</a></li>
-          <li><a href="#">Womens</a></li>
-          <li><a href="#">Kids</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="checkout.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart <span class="badge">3</span></a></li>
-    </ul>
-  </nav>
+<div class="row">
+  <div class="container-fluid navbar">
+    <nav class="navbar-fixed-top">
+      <a href="index.html"><img class="logo" src="images/generic-logo.png"></a>
+      <!-- <label for="show-menu" class="show-menu">Menu</label>
+      <input type="checkbox" id="show-menu" role="button"> -->
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="products.html">Products</a>
+          <ul>
+            <li><a href="#">Mens</a></li>
+            <li><a href="#">Womens</a></li>
+            <li><a href="#">Kids</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="checkout.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart <span class="badge">3</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
 
   <!-- Carousel -->
-<div class="row">
   <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
     <div id="jumbotron">
 
       <div class="prev">
@@ -68,28 +73,33 @@
         <li><a href="# ">4 <span class="sr-only ">(current)</span></a></li>
       </ul>
     </div>
-
+    </div>
+    
   </div>
 </div>
 
   <!-- Email verification -->
+<div class="row">
+  <div class="container-fluid">
 
-  <form class="container">
-    <h1>This is the Home Page</h1>
-    <br>
+    <form class="container">
+      <h1>This is the Home Page</h1>
+      <br>
 
-    <div class="form-group">
-      <label for="email-verification">Enter Your Email</label>
-      <input type="text" class="form-control" name="email-verification" id="email-verify" value="bob@gmail.com" placeholder="example@ex.com">
+      <div class="form-group">
+        <label for="email-verification">Enter Your Email</label>
+        <input type="text" class="form-control" name="email-verification" id="email-verify" value="bob@gmail.com" placeholder="example@ex.com">
+      </div>
+      <button type="submit" class="btn-success btn">Submit</button>
+      <div class="row valid-callout">
+        <h2 id="valid-message"></h2>
+      </div>
+    </form>
+    
     </div>
-    <button type="submit" class="btn-success btn">Submit</button>
-    <div class="row valid-callout">
-      <h2 id="valid-message"></h2>
-    </div>
-  </form>
+</div>
 
   <!-- Footer -->
-
   <footer class="navbar navbar-fixed-bottom" id="bgContent">
 
     <div class="row" id="footerContent">
@@ -133,7 +143,6 @@
 
     </div>
   </footer>
-
   <!-- jQuery CDN -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <!-- Bootstrap JavaScript -->

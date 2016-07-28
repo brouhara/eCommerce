@@ -15,9 +15,6 @@ $(document).ready(function () {
     current,
     changeTimeout;
 
-    console.log(dotItems.length);
-    console.log(listItems);
-
   function moveTo(newIndex) {
 
     var i = newIndex;
