@@ -181,3 +181,15 @@
 li img {
   margin: 0 20px;
 }
+
+/* Verifying the Email */
+
+.validEmail {
+  border-color:limegreen;
+  border-width: medium
+}
+
+.errorInput {
+  border-color :red ;
+  border-width: medium
+}
