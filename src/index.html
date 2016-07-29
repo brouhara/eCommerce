@@ -31,9 +31,9 @@
 
 		<!-- Navbar Row Col -->
 		<div class="row navbar-fixed-top">
-			<div class="col-md-12 navbg">
+			<div class="col-md-12 navbar-bg">
 
-				<!-- Navbar Element -->	
+				<!-- Navbar Element -->
 				<nav class="navbar navbar-fixed-top">
 
 					<!-- Navbar Logo -->
@@ -67,21 +67,18 @@
 	<!-- End Navar Container -->
 
 	<!-- Carousel -->
-	<div class="container-fluid" style="height:300px">
+	<div class="container-fluid" style="height:225px">
 
 		<!-- Carousel Container Row -->
-		<div class="row">
+		<div class="row ">
 
 			<!-- Carousel Container Column -->
-			<div class="col-md-12">
+			<div class="col-md-12 carousel-image" style="height:0px">
 
 				<!-- Jumbotron Slider Elements -->
 				<div id="jumbotron">
 
-					<!-- Previous Button -->
-					<div class="prev">
-						<button type="button " class="btn btn-default " aria-label="Left Align " id="prev "><span class="glyphicon glyphicon-chevron-left " aria-hidden="true "></span></button>
-					</div>
+					<div class="carousel-bg-left"></div>
 
 					<!-- Slider Images -->
 					<div class="slider">
@@ -90,43 +87,53 @@
 						<div id="three" /></div>
 					</div>
 
-					<!-- Next Button -->
-					<div class="next ">
-						<button type="button " class="btn btn-default " aria-label="Right Align " id="next "><span class="glyphicon glyphicon-chevron-right " aria-hidden="true "></span></button>
-					</div>
+					<div class="carousel-bg-right"></div>
 
 				</div>
 				<!-- End Jumbotron Slider Elements -->
+
 			</div>
+			<!-- End Row Col -->
+
 		</div>
-		<!-- End Row Col -->
+		<!-- End Carousel Container Row -->
 
-		<!-- Carousel Row Elements -->
-		<div class="row">
+	<!-- Carousel Row Elements -->
+	<div class="row ">
 
-			<!-- Carousel Column Elements -->
-			<div class="col-span-12">
+		<!-- Carousel Column Elements -->
+		<div class="col-span-12 carousel-overlay">
 
-				<!-- Carousel Image Navigation Bar -->
-				<div class="carousel" aria-label="... ">
+			<!-- Carousel Image Navigation Bar -->
+			<div class="carousel" aria-label="... ">
 
-					<!-- Carousel Current Image -->
-					<ul id="currentImage" class="pagination ">
-						<li class="active "><a href="# ">1 <span class="sr-only ">(current)</span></a></li>
-						<li><a href="# ">2 <span class="sr-only ">(current)</span></a></li>
-						<li><a href="# ">3 <span class="sr-only ">(current)</span></a></li>
-						<li><a href="# ">4 <span class="sr-only ">(current)</span></a></li>
-					</ul>
-					<!-- End Carousel Current Image -->
-
+				<!-- Previous Button -->
+				<div class="prev">
+					<button type="button " class="btn btn-default " aria-label="Left Align " id="prev "><span class="glyphicon glyphicon-chevron-left " aria-hidden="true "></span></button>
 				</div>
-				<!-- End Carousel Image Navigation Bar -->
+
+				<!-- Carousel Current Image -->
+				<ul id="currentImage" class="pagination ">
+					<li class="active "><a href="# ">1 <span class="sr-only ">(current)</span></a></li>
+					<li><a href="# ">2 <span class="sr-only ">(current)</span></a></li>
+					<li><a href="# ">3 <span class="sr-only ">(current)</span></a></li>
+					<li><a href="# ">4 <span class="sr-only ">(current)</span></a></li>
+				</ul>
+				<!-- End Carousel Current Image -->
+
+				<!-- Next Button -->
+				<div class="next ">
+					<button type="button " class="btn btn-default " aria-label="Right Align " id="next "><span class="glyphicon glyphicon-chevron-right " aria-hidden="true "></span></button>
+				</div>
 
 			</div>
-			<!-- End Container Column -->
+			<!-- End Carousel Image Navigation Bar -->
 
 		</div>
-		<!-- End Container Row -->
+		<!-- End Container Column -->
+
+	</div>
+	<!-- End Container Row -->
 
 	</div>
 	<!-- End of Carousel -->
@@ -164,21 +171,23 @@
 
 	</div>
 	<!-- End Email Verification -->
+	<div class="container"></div>
 
 	<!-- Footer -->
 	<footer class="footer">
 
-		<!-- Footer Container -->
-		<div class="container-fluid">
-
 			<!-- Container Row -->
 			<div class="row">
+
+		<!-- Footer Container -->
+		<div class="container-fluid footer-bg">
+
 
 				<!-- Container Col -->
 				<div class="col-md-3" id="map">
 
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4971.293240780024!2d-162.0809380491032!3d5.888403995713022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwNTMnMTguMiJOIDE2MsKwMDQnNDMuNSJX!5e1!3m2!1sen!2sus!4v1469672058103"
-									width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+									width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 				<!-- End Container Col -->
 

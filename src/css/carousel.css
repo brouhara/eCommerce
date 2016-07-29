@@ -1,32 +1,66 @@
 
 #jumbotron {
     display: flex;
-    position: absolute;
-    height: 300px;
+    height: 225px;
     width: 100%;
     line-height: 7;
+    padding: 10px 0;
+    background: whitesmoke;
+    width:100%;
 }
 
-div .prev {
+.carousel {
     display: inline-flex;
     position: relative;
-
-    margin: 0;
-    padding: 0;
-    
-    align-items: center;
+    text-align: center;
     background: none;
+
+    height:100%;
+    width:100%;
 }
 
-div .next {
+.carousel-bg-right {
+    background-color: ghostwhite;
+    width: 5%;
+    margin-right:-15px;
+}
+
+.carousel-bg-left {
+    background-color: ghostwhite;
+    width: 5%;
+    margin-left:-15px;
+}
+
+.carousel-image {
+    background-color: ghostwhite;
+    height: 0px;
+}
+
+.carousel-overlay {
+    height: 225px;
+    width:100%;
+    background-color: ghostwhite;
+}
+
+.prev {
     display: inline-flex;
-    position: relative;
-
-    margin: 0;
-    padding: 0;
-
     align-items: center;
     background: none;
+    padding-left: 5%;
+}
+
+#currentImage {
+    display: inline-flex;
+    width:100%;
+    align-self: flex-end;
+    justify-content: center;
+}
+
+.next {
+    display: inline-flex;
+    align-items: center;
+    background: none;
+    padding-right: 5%;
 }
 
 div.slider {
@@ -55,13 +89,13 @@ div.slider img {
     height: 100%;
 }
 
-div#one {
+div.slider div#one {
     background-image: url("https://www.dropbox.com/s/xn9cdo1itkvxxzq/WP_000122.jpg?dl=1");
     background-position: right bottom, left top;
     background-repeat: no-repeat, repeat;
 }
 
-div#two {
+div.slider div#two {
     display: inline-flex;
     position: relative;
 
@@ -71,7 +105,7 @@ div#two {
 
 }
 
-div#three {
+div.slider div#three {
     display: inline-flex;
     position: relative;
 
@@ -90,11 +124,6 @@ img#four {
     background-image: url("https://www.dropbox.com/s/xn9cdo1itkvxxzq/WP_000122.jpg?dl=1");
 }
 
-div.carousel {
-    position: relative;
-    text-align: center;
-    background: none;
-}
 
 dots {
     margin:0;

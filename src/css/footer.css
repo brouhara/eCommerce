@@ -1,5 +1,12 @@
 
 /* CODE FOR FOOTER */
+.footer {
+  background-color: rgba(0,0,0,1);
+}
+
+.footer-bg {
+  background-color:#202224;
+}
 
 footer #map {
   margin: 10px 0;
