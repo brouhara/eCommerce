@@ -65,86 +65,74 @@
   <!-- Checkout Main -->
 
   <main class="container-fluid checkout">
-    <div class="container">
-      <h1>Checkout</h1>
-      <table class="table table-striped table-hover">
-        <thead>
-          <tr class="info">
-            <th>Items In Your Cart</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Item One</td>
-            <td>$30.00</td>
-          </tr>
-          <tr>
-            <td>Item Two</td>
-            <td>$50.00</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr class="total">
-            <td>TOTAL:</td>
-            <td>$80.00</td>
-          </tr>
-        </tfoot>
-      </table>
-      <hr>
-      <form>
-        <h3>Shipping</h3>
-        <div class="row" id="shipping">
-          <div class="form-group col-md-4">
-            <label for="firstName">First Name</label>
-            <input type="text" class="form-control" id="firstName" name="firstName">
-          </div>
-          <div class="form-group col-md-4">
-            <label for="lastName">Last Name</label>
-            <input type="text" class="form-control" id="lastName" name="lastName">
-          </div>
-          <div class="form-group col-md-4">
-            <label for="userCompany">Company</label>
-            <input type="text" class="form-control" id="userCompany" name="userCompany">
-          </div>
-        </div>
-        <div class="row">
-          <div class="form-group col-md-6">
-            <label for="addressFirst">Address Line 1</label>
-            <input type="text" class="form-control" id="addressFirst" name="addressFirst">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="addressSecond">Address Line 2</label>
-            <input type="text" class="form-control" id="addressSecond" name="addressSecond">
-          </div>
-        </div>
-        <div class="row">
-          <div class="form-group col-md-3">
-            <label for="selectCity">City</label>
-            <input class="form-control" type="text" name="selectCity" id="selectCity" name="selectCity">
-          </div>
-          <div class="form-group col-md-3">
-            <label for="stateSelect">State</label>
-            <select class="form-control" id="stateSelect" name="stateSelect">
-              <option selected disabled> - Select State - </option>
-              <option>Alaska</option>
-              <option>Colorado</option>
-              <option>Delaware</option>
-              <option>Iowa</option>
-              <option>Nebraska Sucks</option>
-            </select>
-          </div>
-          <div class="form-group col-md-3">
-            <label for="zipCode">Zip Code</label>
-            <input type="text" class="form-control" id="zipCode" name="zipCode">
-          </div>
-          <div class="checkbox col-md-3 billingCheck">
-            <label>
-              <input type="checkbox">Billing the same as Shipping?</label>
-          </div>
-        </div>
+
+    <div class="row">
+
+      <div class="col-md-6">
+
+              <form>
+                
+                <h3>Shipping</h3>
+                <div class="row" id="shipping">
+
+
+                  <!--<div class="form-group col-md-4">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName">
+                  </div>-->
+                  <div class="form-group col-md-4">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="userCompany">Company</label>
+                    <input type="text" class="form-control" id="userCompany" name="userCompany">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="addressFirst">Address Line 1</label>
+                    <input type="text" class="form-control" id="addressFirst" name="addressFirst">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="addressSecond">Address Line 2</label>
+                    <input type="text" class="form-control" id="addressSecond" name="addressSecond">
+                  </div>
+
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-3">
+                    <label for="selectCity">City</label>
+                    <input class="form-control" type="text" name="selectCity" id="selectCity" name="selectCity">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="stateSelect">State</label>
+                    <select class="form-control" id="stateSelect" name="stateSelect">
+                      <option selected disabled> - Select State - </option>
+                      <option>Alaska</option>
+                      <option>Colorado</option>
+                      <option>Delaware</option>
+                      <option>Iowa</option>
+                      <option>Nebraska Sucks</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="zipCode">Zip Code</label>
+                    <input type="text" class="form-control" id="zipCode" name="zipCode">
+                  </div>
+                  <div class="checkbox col-md-3 billingCheck">
+                    <label>
+                      <input type="checkbox">Billing the same as Shipping?</label>
+                  </div>
+                </div>
+
+
+
         <hr>
+        
         <h3>Billing</h3>
+
         <div class="row" id="billing">
           <div class="form-group col-md-4">
             <label for="billingFirst">First Name</label>
@@ -190,6 +178,40 @@
             <input type="text" class="form-control" id="billingZip" name="billingZip">
           </div>
         </div>
+      </div>
+
+    <div class="col-md-6">
+
+        <div class="container-fluid">
+            <h1>Checkout</h1>
+
+              <table class="table table-striped table-hover">
+                <thead>
+                  <tr class="info">
+                    <th>Items In Your Cart</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Item One</td>
+                    <td>$30.00</td>
+                  </tr>
+                  <tr>
+                    <td>Item Two</td>
+                    <td>$50.00</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr class="total">
+                    <td>TOTAL:</td>
+                    <td>$80.00</td>
+                  </tr>
+                </tfoot>
+              </table>
+      <hr>
+
+      
         <hr>
         <h3>Credit Card Information</h3>
         <div class="row">
@@ -280,6 +302,8 @@
   <!-- Personal JavaScript -->
   <script type="text/javascript" src="checkout.js">
   </script>
+
+  <script type="text/javascript" src="./js/shipping.js"></script>
 
 </body>
 
