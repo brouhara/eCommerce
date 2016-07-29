@@ -1,0 +1,15 @@
+
+/* CODE FOR FOOTER */
+
+footer #map {
+  margin: 10px 0;
+}
+
+footer .nav li {
+  color: #62C462;
+  margin: 10px 0;
+}
+
+footer li img {
+  margin: 0 20px;
+}

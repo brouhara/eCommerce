@@ -9,9 +9,6 @@ $(document).ready(function () {
       email = $('#email-verify').val();
       console.log(email);
 
-
-
-
       var validSubDomain =  email.indexOf('@') + 2 >= email.indexOf('.')
       var topLevelDomain = email.slice(email.lastIndexOf('.')).length > 1
       var includeAtSymbol = email.indexOf('@') < 0
@@ -28,27 +25,34 @@ $(document).ready(function () {
 
           function validateEmail () {
             if (hasInvalidChars) {
+
               // 'Has invalid Characters!'
               addClassToEmail('errorInput')
               shake()
+
             } else if (!topLevelDomain) {
               // 'Make sure to include a top level domain!'
               addClassToEmail('errorInput')
               shake()
+
             }else if (includeAtSymbol) {
               // 'Make sure to include a "@"!'
               addClassToEmail('errorInput')
               shake()
+              
             }else if (validSubDomain) {
               // 'Please Input a "." after the @'
               addClassToEmail('errorInput')
               shake()
+
             }else if (validDomain) {
               // 'Please Input Something before the "." and after the "@"'
               addClassToEmail('errorInput')
               shake()
+
             } else {
               addClassToEmail('validEmail')
+
             }
           }
           validateEmail()
@@ -59,12 +63,15 @@ $(document).ready(function () {
         $('#email-verify').animate({
           "margin-left" : "15px"
         },100)
+
         $('#email-verify').animate({
           "margin-left" : "-15px"
         },100)
+
         $('#email-verify').animate({
           "margin-left" : "0px"
         },100)
+
       }
 
     })
@@ -157,29 +164,36 @@ $(document).ready(function() {
           minlength: 'First Name must be at least two characters',
           firstletter: 'First letter must be capitalized'
         },
+
         lastName: {
           required: 'Last Name field cannot be blank!',
           minlength: 'Last Name must be at least three characters',
           firstletter: 'First letter must be capitalized'
         },
+
         userCompany: {
           minlength: 'Must be at least two characters',
           firstletter: 'First letter must capitalized'
         },
+
         addressFirst: {
           required: 'Please enter your shipping address'
         },
+
         billAddressOne: {
           required: 'Please enter your shipping address'
         },
+
         cardExpire: {
           required: 'Please enter you expiration date'
         },
+
         verifyCode: {
           required: 'Must enter CCV number',
           minlength: 'Must be three numbers',
           maxlength: 'Must be three numbers',
         }
+        
       },
 
       submitHandler: function(form) {

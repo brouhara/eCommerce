@@ -1,0 +1,130 @@
+
+#menu {
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Make Nav Links Horizontal */
+
+#menu li {
+  display: inline-block;
+  margin-right: 1px;
+}
+
+
+#menu, #menu ul {
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+/* Make Nav Links Horizontal */
+
+#menu li {
+  display: inline-block;
+  margin-right: 1px;
+}
+
+/* Menu Links */
+
+#menu li a {
+  display: block;
+  min-width: 140px;
+  height: 68px;
+  text-align: center;
+  line-height: 70px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  background: #7A8288;
+  text-decoration: none;
+}
+
+/* Menu Hover Spacing Effects */
+ 
+ul#menu > li li:hover {
+    margin: 2px 0px;
+    font-size: 17px;
+}
+
+ul#menu > li li:hover:first-child {
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+ul#menu > li > a {
+    margin-bottom: 2px;
+}
+
+/* Hover for Top Level Links */
+
+#menu li:hover a {
+  background: #62C462;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Style for Dropdown Links */
+
+#menu li:hover ul a {
+  background: #f3f3f3;
+  color: #2f3036;
+  height: 40px;
+  line-height: 40px;
+}
+
+/* Hover state for dropdown links */
+
+#menu li:hover ul a:hover {
+  /*background: #7A8288;*/
+  color: #fff;
+}
+
+/* Hide dropdown links until they are needed */
+
+#menu li ul {
+  display: none;
+}
+
+/* Display the dropdown on hover */
+
+#menu li:hover > ul {
+  display: block;
+}
+
+/* Make dropdown links vertical */
+
+#menu li ul li {
+  display: block;
+  float: none;
+}
+
+/* Prevent text wrapping */
+
+#menu li ul li a {
+  width: 140px;
+  min-width: 100px;
+  padding: 0 10px;
+}
+
+.badge {
+  background: #EE5F5B;
+}
+
+/* Style 'show menu' label button and hide it by default */
+
+.show-menu {
+  height: 55px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  background: #5FBE5F;
+  text-align: center;
+  padding: 20px 0;
+  display: none;
+  /*margin: -5px 0 0 0;*/
+}

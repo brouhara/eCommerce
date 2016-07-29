@@ -5,18 +5,18 @@
  */
 
 $(document).ready(function () {
+  console.log('Carousel.js');
 
   var change_img_time = 4000,
     transition_speed = 0;
 
   var listItems = $('.slider').children('div'),
-    dotItems = $('#dots').children('li'),
+    dotItems = $('#currentImage').children('li'),
     listLen = listItems.length,
     current,
     changeTimeout;
 
   function moveTo(newIndex) {
-
     var i = newIndex;
 
     if (newIndex === 'prev') {
@@ -36,7 +36,6 @@ $(document).ready(function () {
     // listItems.fadeOut(transition_speed);
     // listItems.eq(i).fadeIn(transition_speed);
 
-
     current = i;
 
     //resets time interval if user clicks on slider dot; then begin automated slider
@@ -45,16 +44,16 @@ $(document).ready(function () {
   };
 
   // Event handlers
-  $("#dots li").click(function () {
+  $('#dots li').click(function () {
     var i = $('#dots li').index(this);
     moveTo(i);
   });
 
-  $("#prev").click(function () {
+  $('#prev').click(function () {
     moveTo('prev');
   });
 
-  $("#next").click(function () {
+  $('#next').click(function () {
     moveTo('next');
   });
 
