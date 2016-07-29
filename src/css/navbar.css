@@ -6,9 +6,16 @@
 }
 
 .navbar {
+    position: fixed;
     background:none;
     border-color: none;
     border: 0px solid black;
+}
+
+.navbar-fixed-top {
+    margin: 0;
+    padding: 0;
+    background: none;
 }
 
 nav .logo {
@@ -16,11 +23,5 @@ nav .logo {
   max-height: 70px;
   width: auto;
   margin: auto 0 auto 30px;
-}
-
-.navbar-fixed-top {
-  margin: 0;
-  padding: 0;
-  background: none;
 }
 
