@@ -12,10 +12,10 @@
   <!-- Personal CSS -->
   <link rel="stylesheet" href="style.css">
 
-	<link href="./css/navbar.css" rel="stylesheet">
-	<link href="./css/carousel.css" rel="stylesheet">
-	<link href="./css/navmenu.css" rel="stylesheet">
-	<link href="./css/footer.css" rel="stylesheet">
+  <link href="./css/navbar.css" rel="stylesheet">
+  <link href="./css/carousel.css" rel="stylesheet">
+  <link href="./css/navmenu.css" rel="stylesheet">
+  <link href="./css/footer.css" rel="stylesheet">
   <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/6e15042094.js"></script>
 </head>
@@ -23,47 +23,47 @@
 <body>
 
   <!-- Navbar Container -->
-	<div class="container-fluid" style="height:100px">
+  <div class="container-fluid" style="height:100px">
 
-		<!-- Navbar Row Col -->
-		<div class="row navbar-fixed-top">
-			<div class="col-md-12 navbar-bg">
+    <!-- Navbar Row Col -->
+    <div class="row navbar-fixed-top">
+      <div class="col-md-12 navbar-bg">
 
-				<!-- Navbar Element -->
-				<nav class="navbar navbar-fixed-top">
+        <!-- Navbar Element -->
+        <nav class="navbar navbar-fixed-top">
 
-					<!-- Navbar Logo -->
+          <!-- Navbar Logo -->
           <div class="navbar-header">
-						<a href="index.html"><img class="logo" src="images/coffee.svg"></a>
-						<h1>Deja Brew</h1>
-					</div>
+            <a href="index.html"><img class="logo" src="images/coffee.svg"></a>
+            <h1>Deja Brew</h1>
+          </div>
 
-					<!-- Navbar Menu Links -->
-					<ul class="" id="menu">
+          <!-- Navbar Menu Links -->
+          <ul class="" id="menu">
 
-						<li><a href="index.html">Home</a></li>
-						<li><a href="products.html">Products</a>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a>
 
-							<!-- Products Submenu -->
-							<ul>
-								<li><a href="#">Mens</a></li>
-								<li><a href="#">Womens</a></li>
-								<li><a href="#">Kids</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Contact</a></li>
+              <!-- Products Submenu -->
+              <ul>
+                <li><a href="#">Mens</a></li>
+                <li><a href="#">Womens</a></li>
+                <li><a href="#">Kids</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
 
-						<!-- Shopping Cart -->
-						<li><a href="checkout.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart <span class="badge">3</span></a></li>
-					</ul>
-					<!-- End Navbar Links -->
-				</nav>
-				<!-- Navbar Element -->
-			</div>
-		</div>
-		<!-- Navbar Row Col -->
-	</div>
-	<!-- End Navar Container -->
+            <!-- Shopping Cart -->
+            <li><a href="checkout.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart <span class="badge">3</span></a></li>
+          </ul>
+          <!-- End Navbar Links -->
+        </nav>
+        <!-- Navbar Element -->
+      </div>
+    </div>
+    <!-- Navbar Row Col -->
+  </div>
+  <!-- End Navar Container -->
 
   <!-- Checkout Main -->
 
@@ -73,101 +73,45 @@
 
       <div class="col-md-6">
 
-              <form>
-                
-                <h3>Shipping</h3>
-                <div class="row" id="shipping">
+        <form>
+          <h3>Shipping</h3>
+          <div class="row" id="shipping"></div>
+          <hr>
 
+          <h3>Billing</h3>
 
-                  <!--<div class="form-group col-md-4">
-                    <label for="firstName">First Name</label>
-                    <input type="text" class="form-control" id="firstName" name="firstName">
-                  </div>-->
-                  <div class="form-group col-md-4">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" class="form-control" id="lastName" name="lastName">
-                  </div>
-                  <div class="form-group col-md-4">
-                    <label for="userCompany">Company</label>
-                    <input type="text" class="form-control" id="userCompany" name="userCompany">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-group col-md-6">
-                    <label for="addressFirst">Address Line 1</label>
-                    <input type="text" class="form-control" id="addressFirst" name="addressFirst">
-                  </div>
-
-                  <div class="form-group col-md-6">
-                    <label for="addressSecond">Address Line 2</label>
-                    <input type="text" class="form-control" id="addressSecond" name="addressSecond">
-                  </div>
-
-                </div>
-                <div class="row">
-                  <div class="form-group col-md-3">
-                    <label for="selectCity">City</label>
-                    <input class="form-control" type="text" name="selectCity" id="selectCity" name="selectCity">
-                  </div>
-                  <div class="form-group col-md-3">
-                    <label for="stateSelect">State</label>
-                    <select class="form-control" id="stateSelect" name="stateSelect">
-                      <option selected disabled> - Select State - </option>
-                      <option>Alaska</option>
-                      <option>Colorado</option>
-                      <option>Delaware</option>
-                      <option>Iowa</option>
-                      <option>Nebraska Sucks</option>
-                    </select>
-                  </div>
-                  <div class="form-group col-md-3">
-                    <label for="zipCode">Zip Code</label>
-                    <input type="text" class="form-control" id="zipCode" name="zipCode">
-                  </div>
-                  <div class="checkbox col-md-3 billingCheck">
-                    <label>
-                      <input type="checkbox">Billing the same as Shipping?</label>
-                  </div>
-                </div>
-
-
-
-        <hr>
-        
-        <h3>Billing</h3>
-
-        <div class="row" id="billing">
-          <div class="form-group col-md-4">
-            <label for="billingFirst">First Name</label>
-            <input type="text" class="form-control" id="billingFirst" name="billingFirst">
+          <div class="row" id="billing">
+            <div class="form-group col-md-4">
+              <label for="billingFirst">First Name</label>
+              <input type="text" class="form-control" id="billingFirst" name="billingFirst">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="billingLast">Last Name</label>
+              <input type="text" class="form-control" id="billingLast" name="billingLast">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="billingCo">Company</label>
+              <input type="text" class="form-control" id="billingCo" name="billingCo">
+            </div>
           </div>
-          <div class="form-group col-md-4">
-            <label for="billingLast">Last Name</label>
-            <input type="text" class="form-control" id="billingLast" name="billingLast">
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="billAddressOne">Address Line 1</label>
+              <input type="text" class="form-control" id="billAddressOne" name="billAddressOne">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="billAddressTwo">Address Line 2</label>
+              <input type="text" class="form-control" id="billAddressTwo" name="billAddressTwo">
+            </div>
           </div>
-          <div class="form-group col-md-4">
-            <label for="billingCo">Company</label>
-            <input type="text" class="form-control" id="billingCo" name="billingCo">
-          </div>
-        </div>
-        <div class="row">
-          <div class="form-group col-md-6">
-            <label for="billAddressOne">Address Line 1</label>
-            <input type="text" class="form-control" id="billAddressOne" name="billAddressOne">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="billAddressTwo">Address Line 2</label>
-            <input type="text" class="form-control" id="billAddressTwo" name="billAddressTwo">
-          </div>
-        </div>
-        <div class="row">
-          <div class="form-group col-md-3">
-            <label for="billingCity">City</label>
-            <input class="form-control" type="text" name="billingCity" id="billingCity" name="billingCity">
-          </div>
-          <div class="form-group col-md-3">
-            <label for="billingState">State</label>
-            <select class="form-control" id="billingState" name="billingState">
+          <div class="row">
+            <div class="form-group col-md-3">
+              <label for="billingCity">City</label>
+              <input class="form-control" type="text" name="billingCity" id="billingCity" name="billingCity">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="billingState">State</label>
+              <select class="form-control" id="billingState" name="billingState">
               <option selected disabled> - Select State - </option>
               <option>Alaska</option>
               <option>Colorado</option>
@@ -175,127 +119,127 @@
               <option>Iowa</option>
               <option>Nebraska Sucks</option>
             </select>
+            </div>
+            <div class="form-group col-md-3">
+              <label for="billingZip">Zip Code</label>
+              <input type="text" class="form-control" id="billingZip" name="billingZip">
+            </div>
           </div>
-          <div class="form-group col-md-3">
-            <label for="billingZip">Zip Code</label>
-            <input type="text" class="form-control" id="billingZip" name="billingZip">
-          </div>
-        </div>
       </div>
 
-    <div class="col-md-6">
+      <div class="col-md-6">
 
         <div class="container-fluid">
-            <h1>Checkout</h1>
+          <h1>Checkout</h1>
 
-              <table class="table table-striped table-hover">
-                <thead>
-                  <tr class="info">
-                    <th>Items In Your Cart</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Item One</td>
-                    <td>$30.00</td>
-                  </tr>
-                  <tr>
-                    <td>Item Two</td>
-                    <td>$50.00</td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr class="total">
-                    <td>TOTAL:</td>
-                    <td>$80.00</td>
-                  </tr>
-                </tfoot>
-              </table>
-      <hr>
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr class="info">
+                <th>Items In Your Cart</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Item One</td>
+                <td>$30.00</td>
+              </tr>
+              <tr>
+                <td>Item Two</td>
+                <td>$50.00</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr class="total">
+                <td>TOTAL:</td>
+                <td>$80.00</td>
+              </tr>
+            </tfoot>
+          </table>
+          <hr>
 
-      
-        <hr>
-        <h3>Credit Card Information</h3>
-        <div class="row">
-          <div class="form-group col-md-3">
-            <label for="creditCard">Credit Card Number</label>
-            <input class="form-control" type="number" id="creditCard" name="creditCard">
+
+          <hr>
+          <h3>Credit Card Information</h3>
+          <div class="row">
+            <div class="form-group col-md-3">
+              <label for="creditCard">Credit Card Number</label>
+              <input class="form-control" type="number" id="creditCard" name="creditCard">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="cardExpire">Date</label>
+              <input class="form-control" type="date" id="cardExpire" name="cardExpire">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="verifyCode">Number</label>
+              <input class="form-control" type="number" id="verifyCode" name="verifyCode">
+            </div>
+            <div class="purchaseButton col-md-3">
+              <button type="submit" class="btn btn-info btn-block">Purchase</button>
+            </div>
           </div>
-          <div class="form-group col-md-3">
-            <label for="cardExpire">Date</label>
-            <input class="form-control" type="date" id="cardExpire" name="cardExpire">
-          </div>
-          <div class="form-group col-md-3">
-            <label for="verifyCode">Number</label>
-            <input class="form-control" type="number" id="verifyCode" name="verifyCode">
-          </div>
-          <div class="purchaseButton col-md-3">
-            <button type="submit" class="btn btn-info btn-block">Purchase</button>
-          </div>
+          </form>
         </div>
-      </form>
-    </div>
   </main>
 
   <!-- Footer -->
-	<footer class="footer">
+  <footer class="footer">
 
-			<!-- Container Row -->
-			<div class="row">
+    <!-- Container Row -->
+    <div class="row">
 
-		<!-- Footer Container -->
-		<div class="container-fluid footer-bg">
+      <!-- Footer Container -->
+      <div class="container-fluid footer-bg">
 
 
-				<!-- Container Col -->
-				<div class="col-md-3" id="map">
+        <!-- Container Col -->
+        <div class="col-md-3" id="map">
 
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4971.293240780024!2d-162.0809380491032!3d5.888403995713022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwNTMnMTguMiJOIDE2MsKwMDQnNDMuNSJX!5e1!3m2!1sen!2sus!4v1469672058103"
-									width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-				</div>
-				<!-- End Container Col -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4971.293240780024!2d-162.0809380491032!3d5.888403995713022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwNTMnMTguMiJOIDE2MsKwMDQnNDMuNSJX!5e1!3m2!1sen!2sus!4v1469672058103"
+            width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <!-- End Container Col -->
 
-				<!-- Container Col -->
-				<div class="col-md-3">
-					<ul class="nav nav-pills nav-stacked text-center">
-						<li class="active"><a href="index.html">Home</a></li>
-						<li>item 1</li>
-						<li>item 2</li>
-						<li>item 3</li>
-					</ul>
-				</div>
-				<!-- End Container Col -->
+        <!-- Container Col -->
+        <div class="col-md-3">
+          <ul class="nav nav-pills nav-stacked text-center">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+          </ul>
+        </div>
+        <!-- End Container Col -->
 
-				<!-- Container Col -->
-				<div class="col-md-3">
-					<ul class="nav nav-pills nav-stacked text-center">
-						<li><a href="products.html">Store inventory</a></li>
-						<li><img src="images/placeholder.jpg" width="40px" height="40px" alt="product 2" alt="product 1" />item 1</li>
-						<li><img src="images/placeholder.jpg" width="40px" height="40px" alt="product 2" />item 2</li>
-					</ul>
-				</div>
-				<!-- End Container Col -->
+        <!-- Container Col -->
+        <div class="col-md-3">
+          <ul class="nav nav-pills nav-stacked text-center">
+            <li><a href="products.html">Store inventory</a></li>
+            <li><img src="images/placeholder.jpg" width="40px" height="40px" alt="product 2" alt="product 1" />item 1</li>
+            <li><img src="images/placeholder.jpg" width="40px" height="40px" alt="product 2" />item 2</li>
+          </ul>
+        </div>
+        <!-- End Container Col -->
 
-				<!-- Container Col -->
-				<div class="col-md-3">
-					<ul class="nav nav-pills nav-stacked text-center">
-						<li><a href="checkout.html">Check Out</a></li>
-						<li>item 1</li>
-						<li>item 2</li>
-						<li>item 3</li>
-					</ul>
-				</div>
-				<!-- End Container Col -->
+        <!-- Container Col -->
+        <div class="col-md-3">
+          <ul class="nav nav-pills nav-stacked text-center">
+            <li><a href="checkout.html">Check Out</a></li>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+          </ul>
+        </div>
+        <!-- End Container Col -->
 
-			</div>
-			<!-- End Container Row -->
+      </div>
+      <!-- End Container Row -->
 
-		</div>
-		<!-- End Container -->
+    </div>
+    <!-- End Container -->
 
-	</footer>
-	<!-- End Footer -->
+  </footer>
+  <!-- End Footer -->
   <!-- jQuery CDN -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <!-- Bootstrap JavaScript -->
@@ -303,9 +247,7 @@
   <!-- jQuery Validation Plugin -->
   <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
   <!-- Personal JavaScript -->
-  <script type="text/javascript" src="checkout.js">
-  </script>
-
+  <script type="text/javascript" src="checkout.js"></script>
   <script type="text/javascript" src="./js/shipping.js"></script>
 
 </body>
