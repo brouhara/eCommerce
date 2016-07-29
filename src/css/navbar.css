@@ -1,5 +1,9 @@
 /* NAVBAR STYLING */
-
+.navbar-header h1 {
+  display: inline-block;
+  color: white;
+  padding-left: 15px;
+}
 .navbar-bg {
     background-color: #7A8288;
     height: 70px;
@@ -24,4 +28,3 @@ nav .logo {
   width: auto;
   margin: auto 0 auto 30px;
 }
-
